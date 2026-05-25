@@ -12,11 +12,11 @@ import utils as utils
 
 
 
-fmin,fmax = 1,40
+fmin,fmax = 1,30
 tmin_task1,tmax_task1 = -1.2,0.3
 tmin_task2,tmax_task2 = -0.42,0.3 # 这里最后要用和task1一样的baseline
 # tmin_idi,tmax_idi = 0,0.42
-tmin_response = -0.2
+tmin_response = -0.5
 tmax_response = 0.3
 
 baseline_response = (-1.2, -0)  # 拼接后的 baseline（和 task2 一致）
@@ -55,7 +55,7 @@ events_per_trial = 6
 classifier_args = dict(
     Cs=np.logspace(-3, 3, 7),
     solver='liblinear',
-    penalty = 'l2',
+    penalty = 'l1',
     cv = 10,
     dual = False,
     class_weight = 'balanced',

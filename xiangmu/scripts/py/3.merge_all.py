@@ -195,7 +195,7 @@ if __name__ == "__main__":
 
         
         # 保存为CSV文件
-        output_path = os.path.join(folder_path, "data_for_behavior.csv")
+        output_path = os.path.join(folder_path, "data.csv")
         merge_df.to_csv(output_path, index=False, na_rep="NaN")
         print(f"\n数据已保存到: {output_path}")
         print(f"总数据行数: {len(merge_df)}")

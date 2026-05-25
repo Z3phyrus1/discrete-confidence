@@ -26,7 +26,7 @@ if __name__ == "__main__":
     subject = 'sub01'
     sub_id_int = int(re.search(r'\d+', subject).group())
     #trial = '2'
-    working_dir = os.path.join('../../..', 'data', 'clean_EEG', subject)
+    working_dir = os.path.join('../../..', 'data', 'clean_EEG_dual', subject)
     print(f"被试文件夹:  {working_dir}")
     
     # ============================================================

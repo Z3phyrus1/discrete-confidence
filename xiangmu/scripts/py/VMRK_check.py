@@ -12,8 +12,8 @@ import shutil
 
 def process_vmrk_files():
     # 配置被试信息
-    subject = 'sub09'  # 可以根据需要修改
-    working_dir = os.path.join('../', 'data', 'eeg', subject)
+    subject = 'sub16'  # 可以根据需要修改
+    working_dir = os.path.join('../../', 'data', 'eeg', subject,)
     print(f"被试文件夹: {working_dir}")
 
     # 获取所有.vmrk文件，使用glob.glob并转换为Python列表

@@ -53,5 +53,5 @@ def remove_last_column(working_dir):
                         print(f"已处理: {file_path}")
 
 if __name__ == "__main__":
-    working_dir = 'D:/xiangmu/data/eeg/sub09/cyp2'
+    working_dir = 'D:/xiangmu/data/eeg/sub15/wym2'
     remove_last_column(working_dir)

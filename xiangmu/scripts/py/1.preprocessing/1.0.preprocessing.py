@@ -19,8 +19,8 @@ import utils
 
 if __name__ == "__main__":
     
-    subject = 'sub09'
-    working_dir = os.path.join('../..', 'data', 'eeg', subject)
+    subject = 'sub16'
+    working_dir = os.path.join('../../..', 'data', 'eeg', subject)
     print(f"被试文件夹: {working_dir}")
     
     # 获取所有 vhdr 文件

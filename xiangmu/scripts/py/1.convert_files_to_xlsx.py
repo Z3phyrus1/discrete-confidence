@@ -228,7 +228,7 @@ def convert_all_text_files(working_dir, encoding='gbk'):
 
 
 if __name__ == "__main__":
-    working_dir = 'D:/xiangmu/data/raw_behavior'
+    working_dir = 'D:/xiangmu/data/behavior_for_behavior'
     
     if not os.path.exists(working_dir):
         print(f"错误：目录不存在 - {working_dir}")

@@ -23,7 +23,7 @@ import utils
 
 if __name__ == "__main__":
     
-    subject = 'sub02'
+    subject = 'sub15'
     working_dir = os.path.join('../..', 'data', 'eeg', subject)
     print(f"被试文件夹: {working_dir}")
     

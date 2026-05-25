@@ -26,10 +26,11 @@ if __name__ == "__main__":
     subject = 'sub10'
     trial   = '3'
     sub_id_int = int(re.search(r'\d+', subject).group())
-    working_dir = os.path.join('../../..', 'data', 'clean_EEG', subject)
+
+    working_dir = os.path.join('../../..', 'data', 'clean_EEG_dual', subject)
     print(f"Subject: {subject} (ID={sub_id_int}), Trial: {trial}")
     
-    fit_par_path = os.path.join('../../..', 'data', 'behavior', 'idsess', 'fit_par.txt')
+    fit_par_path = os.path.join('../../..', 'data', 'behavior', 'fit_par.txt')
     with open(fit_par_path, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
@@ -66,7 +67,7 @@ if __name__ == "__main__":
     # ============================================================
     # 3) Behavior data
     # ============================================================
-    behavior_path = os.path.join('../../..', 'data', 'behavior', 'id', 'data_wide_wmPred.txt')
+    behavior_path = os.path.join('../../..', 'data', 'behavior', 'data_wide_wmPred.txt')
     df_pred = pd.read_csv(behavior_path, sep=';')
     df_sub = df_pred[df_pred['id'] == sub_id_int].copy()
     beh_aligned = df_sub[df_sub['seq'].astype(str) == str(trial)].reset_index(drop=True)
